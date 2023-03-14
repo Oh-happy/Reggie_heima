@@ -1,0 +1,19 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://aliyun-mysql.mysql.rds.aliyuncs.com/reggie?useSSL=false&serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    username: lw0120
+    password: Hao19980518
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: ASSIGN_ID
+reggie:
+  path: D:\
